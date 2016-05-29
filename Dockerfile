@@ -11,7 +11,7 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 # Update node.js
 RUN npm cache clean -f && npm install -g n \
-    && n stable
+    && n stable \
     && node -v
 
 
