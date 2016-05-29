@@ -2,6 +2,7 @@ FROM debian:jessie
 
 # Install node.js
 RUN apt-get update && apt-get install -y \
+    curl \
     nodejs \
     npm
 
