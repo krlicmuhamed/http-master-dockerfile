@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 # Install http-master globally via npm
-RUN ynpm install -g http-master
+RUN npm install -g http-master
 
 # Run http-master
-http-master --config /etc/http-master/http-master.conf
+CMD http-master --config /etc/http-master/http-master.conf
